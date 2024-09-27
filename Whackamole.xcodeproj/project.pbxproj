@@ -14,6 +14,20 @@
 		D40CC2FF2C9CB5BA007408E5 /* WhackamoleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40CC2FE2C9CB5BA007408E5 /* WhackamoleTests.swift */; };
 		D40CC3092C9CB5BA007408E5 /* WhackamoleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40CC3082C9CB5BA007408E5 /* WhackamoleUITests.swift */; };
 		D40CC30B2C9CB5BA007408E5 /* WhackamoleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40CC30A2C9CB5BA007408E5 /* WhackamoleUITestsLaunchTests.swift */; };
+		D40CC31A2C9E6830007408E5 /* ghost1.usdz in Resources */ = {isa = PBXBuildFile; fileRef = D40CC3192C9E6830007408E5 /* ghost1.usdz */; };
+		D431F6472C9F44AE0090897D /* Ghosty.usdz in Resources */ = {isa = PBXBuildFile; fileRef = D431F6462C9F44AE0090897D /* Ghosty.usdz */; };
+		D4D658962CA11AA100412F57 /* tomb3.usdz in Resources */ = {isa = PBXBuildFile; fileRef = D4D658952CA11AA100412F57 /* tomb3.usdz */; };
+		D4D658BE2CA2430100412F57 /* halloween-soundtrack.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D4D658BD2CA2430100412F57 /* halloween-soundtrack.mp3 */; };
+		D4D658C02CA245EC00412F57 /* ghostly3.wav in Resources */ = {isa = PBXBuildFile; fileRef = D4D658BF2CA245EC00412F57 /* ghostly3.wav */; };
+		D4D658C22CA245F200412F57 /* soul-hit.wav in Resources */ = {isa = PBXBuildFile; fileRef = D4D658C12CA245F200412F57 /* soul-hit.wav */; };
+		D4D658C42CA3257900412F57 /* Toon-Bat.usdz in Resources */ = {isa = PBXBuildFile; fileRef = D4D658C32CA3257900412F57 /* Toon-Bat.usdz */; };
+		D4D658CA2CA32EE900412F57 /* Fastghost.usdz in Resources */ = {isa = PBXBuildFile; fileRef = D4D658C92CA32EE900412F57 /* Fastghost.usdz */; };
+		D4D658CC2CA3472100412F57 /* Halloween_Set_Reload.usdz in Resources */ = {isa = PBXBuildFile; fileRef = D4D658CB2CA3472100412F57 /* Halloween_Set_Reload.usdz */; };
+		D4D658CE2CA3B10E00412F57 /* grid.png in Resources */ = {isa = PBXBuildFile; fileRef = D4D658CD2CA3B10E00412F57 /* grid.png */; };
+		D4D658D02CA3BB4E00412F57 /* Spike_Trap_01.usdz in Resources */ = {isa = PBXBuildFile; fileRef = D4D658CF2CA3BB4E00412F57 /* Spike_Trap_01.usdz */; };
+		D4D658D22CA4831200412F57 /* ARViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D658D12CA4831200412F57 /* ARViewContainer.swift */; };
+		D4D658D42CA4834E00412F57 /* Whackamole.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D658D32CA4834E00412F57 /* Whackamole.swift */; };
+		D4D658D62CA4842200412F57 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D658D52CA4842200412F57 /* SoundManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +58,20 @@
 		D40CC3042C9CB5BA007408E5 /* WhackamoleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhackamoleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D40CC3082C9CB5BA007408E5 /* WhackamoleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhackamoleUITests.swift; sourceTree = "<group>"; };
 		D40CC30A2C9CB5BA007408E5 /* WhackamoleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhackamoleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D40CC3192C9E6830007408E5 /* ghost1.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = ghost1.usdz; sourceTree = "<group>"; };
+		D431F6462C9F44AE0090897D /* Ghosty.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Ghosty.usdz; sourceTree = "<group>"; };
+		D4D658952CA11AA100412F57 /* tomb3.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = tomb3.usdz; sourceTree = "<group>"; };
+		D4D658BD2CA2430100412F57 /* halloween-soundtrack.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "halloween-soundtrack.mp3"; sourceTree = "<group>"; };
+		D4D658BF2CA245EC00412F57 /* ghostly3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ghostly3.wav; sourceTree = "<group>"; };
+		D4D658C12CA245F200412F57 /* soul-hit.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "soul-hit.wav"; sourceTree = "<group>"; };
+		D4D658C32CA3257900412F57 /* Toon-Bat.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = "Toon-Bat.usdz"; sourceTree = "<group>"; };
+		D4D658C92CA32EE900412F57 /* Fastghost.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Fastghost.usdz; sourceTree = "<group>"; };
+		D4D658CB2CA3472100412F57 /* Halloween_Set_Reload.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Halloween_Set_Reload.usdz; sourceTree = "<group>"; };
+		D4D658CD2CA3B10E00412F57 /* grid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grid.png; sourceTree = "<group>"; };
+		D4D658CF2CA3BB4E00412F57 /* Spike_Trap_01.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Spike_Trap_01.usdz; sourceTree = "<group>"; };
+		D4D658D12CA4831200412F57 /* ARViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewContainer.swift; sourceTree = "<group>"; };
+		D4D658D32CA4834E00412F57 /* Whackamole.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Whackamole.swift; sourceTree = "<group>"; };
+		D4D658D52CA4842200412F57 /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +122,14 @@
 		D40CC2EC2C9CB5B7007408E5 /* Whackamole */ = {
 			isa = PBXGroup;
 			children = (
+				D4D658D92CA4855700412F57 /* PNGAssets */,
+				D4D658D82CA4853700412F57 /* Sounds */,
+				D4D658D72CA484BC00412F57 /* GameModels */,
 				D40CC2ED2C9CB5B7007408E5 /* AppDelegate.swift */,
 				D40CC2EF2C9CB5B7007408E5 /* ContentView.swift */,
+				D4D658D12CA4831200412F57 /* ARViewContainer.swift */,
+				D4D658D32CA4834E00412F57 /* Whackamole.swift */,
+				D4D658D52CA4842200412F57 /* SoundManager.swift */,
 				D40CC2F12C9CB5BA007408E5 /* Assets.xcassets */,
 				D40CC2F32C9CB5BA007408E5 /* Preview Content */,
 			);
@@ -125,6 +159,38 @@
 				D40CC30A2C9CB5BA007408E5 /* WhackamoleUITestsLaunchTests.swift */,
 			);
 			path = WhackamoleUITests;
+			sourceTree = "<group>";
+		};
+		D4D658D72CA484BC00412F57 /* GameModels */ = {
+			isa = PBXGroup;
+			children = (
+				D4D658C32CA3257900412F57 /* Toon-Bat.usdz */,
+				D4D658952CA11AA100412F57 /* tomb3.usdz */,
+				D431F6462C9F44AE0090897D /* Ghosty.usdz */,
+				D4D658CB2CA3472100412F57 /* Halloween_Set_Reload.usdz */,
+				D4D658C92CA32EE900412F57 /* Fastghost.usdz */,
+				D4D658CF2CA3BB4E00412F57 /* Spike_Trap_01.usdz */,
+				D40CC3192C9E6830007408E5 /* ghost1.usdz */,
+			);
+			path = GameModels;
+			sourceTree = "<group>";
+		};
+		D4D658D82CA4853700412F57 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				D4D658BF2CA245EC00412F57 /* ghostly3.wav */,
+				D4D658C12CA245F200412F57 /* soul-hit.wav */,
+				D4D658BD2CA2430100412F57 /* halloween-soundtrack.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		D4D658D92CA4855700412F57 /* PNGAssets */ = {
+			isa = PBXGroup;
+			children = (
+				D4D658CD2CA3B10E00412F57 /* grid.png */,
+			);
+			path = PNGAssets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,8 +297,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4D658BE2CA2430100412F57 /* halloween-soundtrack.mp3 in Resources */,
+				D4D658CC2CA3472100412F57 /* Halloween_Set_Reload.usdz in Resources */,
 				D40CC2F52C9CB5BA007408E5 /* Preview Assets.xcassets in Resources */,
+				D40CC31A2C9E6830007408E5 /* ghost1.usdz in Resources */,
 				D40CC2F22C9CB5BA007408E5 /* Assets.xcassets in Resources */,
+				D431F6472C9F44AE0090897D /* Ghosty.usdz in Resources */,
+				D4D658D02CA3BB4E00412F57 /* Spike_Trap_01.usdz in Resources */,
+				D4D658C02CA245EC00412F57 /* ghostly3.wav in Resources */,
+				D4D658CA2CA32EE900412F57 /* Fastghost.usdz in Resources */,
+				D4D658CE2CA3B10E00412F57 /* grid.png in Resources */,
+				D4D658962CA11AA100412F57 /* tomb3.usdz in Resources */,
+				D4D658C42CA3257900412F57 /* Toon-Bat.usdz in Resources */,
+				D4D658C22CA245F200412F57 /* soul-hit.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +336,9 @@
 			files = (
 				D40CC2F02C9CB5B7007408E5 /* ContentView.swift in Sources */,
 				D40CC2EE2C9CB5B7007408E5 /* AppDelegate.swift in Sources */,
+				D4D658D22CA4831200412F57 /* ARViewContainer.swift in Sources */,
+				D4D658D42CA4834E00412F57 /* Whackamole.swift in Sources */,
+				D4D658D62CA4842200412F57 /* SoundManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,6 +506,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
@@ -457,6 +538,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;

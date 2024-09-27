@@ -1,46 +1,92 @@
-//
-//  ContentView.swift
-//  Whackamole
-//
-//  Created by Diego Martinez on 9/19/24.
-//
-
 import SwiftUI
 import RealityKit
+import ARKit
+import Combine
 
-struct ContentView : View {
+struct ContentView: View {
+    @StateObject var game = WhacAMoleGame(arView: ARView(frame: .zero))
+    @State private var showInstructions = true // State to show/hide instructions
+    @State private var showConfirmButton = false
+
     var body: some View {
-        ARViewContainer().edgesIgnoringSafeArea(.all)
+        ZStack {
+            ARViewContainer(game: game)
+                .edgesIgnoringSafeArea(.all)
+
+            if showInstructions {
+                // Instruction Overlay
+                VStack {
+                    Spacer()
+                    VStack(spacing: 10) {
+                        Text("Welcome to Whac-A-Mole!")
+                            .font(.title)
+                            .foregroundColor(.yellow)
+                            .padding(.bottom, 20)
+                        
+                        Text("Instructions:")
+                            .font(.headline)
+                            .foregroundColor(.white)
+                            .multilineTextAlignment(.leading) // Left alignment
+                        
+                        Text("1. Place the game board in your environment by tapping on a flat surface.")
+                            .font(.subheadline)
+                            .foregroundColor(.white)
+                            .multilineTextAlignment(.leading) // Left alignment
+
+                        Text("2. Tap the START button to begin.")
+                            .font(.subheadline)
+                            .foregroundColor(.white)
+                            .multilineTextAlignment(.leading) // Left alignment
+
+                        Text("3. Whack the ghosts as they pop up to score points.")
+                            .font(.subheadline)
+                            .foregroundColor(.white)
+                            .multilineTextAlignment(.leading) // Left alignment
+
+                        Text("4. Avoid hitting traps! They decrease your score.")
+                            .font(.subheadline)
+                            .foregroundColor(.white)
+                            .multilineTextAlignment(.leading) // Left alignment
+
+                        Text("5. You have 30 seconds to get the highest score.")
+                            .font(.subheadline)
+                            .foregroundColor(.white)
+                            .multilineTextAlignment(.leading) // Left alignment
+                            
+                        Button(action: {
+                            showInstructions.toggle() // Dismiss instructions
+                        }) {
+                            Text("Got it!")
+                                .font(.title2)
+                                .padding()
+                                .background(Color.yellow)
+                                .foregroundColor(.black)
+                                .cornerRadius(10)
+                        }
+                        .padding(.top, 20)
+                    }
+                    .padding()
+                    .background(Color.black.opacity(0.8))
+                    .cornerRadius(15)
+                    Spacer()
+                }
+            } else {
+                // Game Score and Time Display
+                VStack {
+                    HStack {
+                        Text("SCORE: \(game.score)")
+                            .foregroundColor(.yellow)
+                            .font(.title)
+                            .padding()
+                        Spacer()
+                        Text("TIME: \(game.remainingTime)")
+                            .foregroundColor(.red)
+                            .font(.title)
+                            .padding()
+                    }
+                    Spacer()
+                }
+            }
+        }
     }
-}
-
-struct ARViewContainer: UIViewRepresentable {
-    
-    func makeUIView(context: Context) -> ARView {
-        
-        let arView = ARView(frame: .zero)
-
-        // Create a cube model
-        let mesh = MeshResource.generateBox(size: 0.1, cornerRadius: 0.005)
-        let material = SimpleMaterial(color: .gray, roughness: 0.15, isMetallic: true)
-        let model = ModelEntity(mesh: mesh, materials: [material])
-        model.transform.translation.y = 0.05
-
-        // Create horizontal plane anchor for the content
-        let anchor = AnchorEntity(.plane(.horizontal, classification: .any, minimumBounds: SIMD2<Float>(0.2, 0.2)))
-        anchor.children.append(model)
-
-        // Add the horizontal plane anchor to the scene
-        arView.scene.anchors.append(anchor)
-
-        return arView
-        
-    }
-    
-    func updateUIView(_ uiView: ARView, context: Context) {}
-    
-}
-
-#Preview {
-    ContentView()
 }
